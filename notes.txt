@@ -1,0 +1,66 @@
+# src/scrapers/youtube.py
+
+
+
+# ============================================================
+# Example usage and testing
+# ============================================================
+
+if __name__ == '__main__':
+    # Example 1: With API key (recommended)
+    print("="*60)
+    print("EXAMPLE 1: Using YouTube API (requires key)")
+    print("="*60)
+    
+    # Get API key from environment or input
+    api_key = os.environ.get('YOUTUBE_API_KEY') or input("Enter YouTube API key (or press Enter to skip): ").strip()
+    
+    if api_key:
+        scraper = YouTubeScraper(api_key=api_key)
+        
+        # Test with popular dog channel
+        result = scraper.scrape('@MayaPolarbear')
+        if result:
+            print("\n✅ Success!")
+            print(f"Name: {result.name}")
+            print(f"Handle: @{result.handle}")
+            print(f"Subscribers: {result.followers:,}")
+            print(f"Engagement: {result.avg_engagement}%")
+            print(f"Videos: {result.post_count}")
+            print(f"Email: {result.email or 'Not found'}")
+    else:
+        print("⚠️  Skipping API example (no key provided)")
+    
+    print("\n" + "="*60)
+    print("EXAMPLE 2: Using Web Scraping (no API key needed)")
+    print("="*60)
+    
+    if PLAYWRIGHT_AVAILABLE:
+        scraper = YouTubeScraper()  # Will use web scraping
+        result = scraper.scrape('@MayaPolarbear')
+        if result:
+            print("\n✅ Success!")
+            print(f"Name: {result.name}")
+            print(f"Handle: @{result.handle}")
+            print(f"Subscribers: {result.followers:,}")
+    else:
+        print("⚠️  Playwright not installed")
+    
+    print("\n" + "="*60)
+    print("💡 SETUP INSTRUCTIONS")
+    print("="*60)
+    print("""
+    1. Get YouTube API Key (FREE):
+       - Go to: https://console.cloud.google.com/
+       - Create project → Enable YouTube Data API v3
+       - Create credentials → API Key
+       - Set environment variable: export YOUTUBE_API_KEY='your-key'
+    
+    2. Install dependencies:
+       pip install google-api-python-client
+       
+       OR (for web scraping fallback):
+       pip install playwright && playwright install
+    
+    3. API Quota: 10,000 units/day (enough for ~100 channels)
+    """)
