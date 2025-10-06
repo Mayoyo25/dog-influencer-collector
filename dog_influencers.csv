@@ -1,0 +1,11 @@
+id,name,platform,handle,followers,avg_engagement,primary_niche,content_style,bio_snippet,email,location,post_count,date_added,source_tag,verified,last_post_date
+1,Buddy the Golden,Instagram,buddy_golden,125000,4.2,puppy_training,Educational,Golden Retriever puppy sharing training tips and daily adventures 🐕,buddy@example.com,"California, USA",450,2025-10-07,manual,True,2024-01-15
+2,Maru the Shiba,Instagram,marutaro,2500000,2.8,small_breeds,Funny,Shiba Inu with attitude 🦊 Tokyo-based,,"Tokyo, Japan",1200,2025-10-07,manual,True,2024-01-14
+3,Jiff Pom,Instagram,jiffpom,9000000,1.5,small_breeds,Lifestyle,Pomeranian celebrity 🎬 Hollywood pup,jiff@management.com,"Los Angeles, USA",800,2025-10-07,manual,True,2024-01-13
+4,Tuna Melts My Heart,Instagram,tunameltsmyheart,1800000,3.1,rescue_advocate,Storytelling,Rescue dog spreading love and awareness ❤️,tuna@rescue.org,"New York, USA",600,2025-10-07,manual,True,2024-01-12
+5,Doug the Pug,Instagram,itsdougthepug,4000000,2.2,dog_fashion,Funny,Pug in costumes and adventures 🎭,doug@agent.com,"Nashville, USA",950,2025-10-07,manual,True,2024-01-11
+6,Loki the Wolfdog,YouTube,lokithewolfdog,850000,5.8,active_dogs,Educational,Wolfdog adventures and training content 🐺,loki@wolfdog.com,"Colorado, USA",200,2025-10-07,manual,False,2024-01-10
+7,Marnie the Dog,Instagram,marniethedog,2000000,2.9,senior_dogs,Lifestyle,Senior Shih Tzu living her best life 👑,,"San Francisco, USA",700,2025-10-07,manual,True,2024-01-09
+8,Bodhi the Surf Dog,Instagram,bodhisurfdog,1500000,4.5,active_dogs,Lifestyle,Golden Retriever who surfs better than humans 🏄‍♂️,bodhi@surf.com,"Hawaii, USA",500,2025-10-07,manual,True,2024-01-08
+9,Toast Meets World,TikTok,toastmeetsworld,3200000,6.2,dog_fashion,Funny,French Bulldog in cute outfits and adventures 🥖,toast@fashion.com,"Paris, France",300,2025-10-07,manual,True,2024-01-07
+10,Harlow & Sage,Instagram,harlowandsage,1200000,3.8,dog_food_reviews,Product_Review,Weimaraner and Dachshund reviewing dog products 🍖,harlow@reviews.com,"Austin, USA",400,2025-10-07,manual,False,2024-01-06
