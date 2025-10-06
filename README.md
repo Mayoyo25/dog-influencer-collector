@@ -49,8 +49,7 @@ A simple Python tool to collect, organize, and track dog-related social media in
 1. **Clone the repo**
 
 ```bash
-git clone <repo-url>
-cd <repo-folder>
+git clone https://github.com/Mayoyo25/dogs.git
 ```
 
 2. **Create a virtual environment**
